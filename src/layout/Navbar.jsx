@@ -20,12 +20,12 @@ const Navbar = () => {
 
                 {/* Desktop navigation */}
                 <div>
-                    <ul className="hidden md:flex gap-8 items-center">
+                    <ul className="hidden md:flex gap-16 items-center">
                         {navLinks.map((item, index) => (
                             <li key={index}>
                                 <a
                                     href={item.href}
-                                    className="hover:text-muted"
+                                    className="hover:text-muted font-semibold text-lg"
                                 >
                                     {item.label}
                                 </a>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
                         {/* CTA */}
                         <a
-                            className="text-white bg-button hover:bg-button/90 px-6 py-2.5 text-center"
+                            className="text-white bg-button hover:bg-button/90 px-6 py-2.5 text-center font-medium text-lg"
                             href="#contato"
                         >
                             Fale Conosco
