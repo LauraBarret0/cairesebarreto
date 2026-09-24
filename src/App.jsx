@@ -1,6 +1,7 @@
 import Navbar from "./layout/Navbar"
 import Hero from "./sections/Hero"
 import Office from "./sections/Office"
+import PracticeAreas from "./sections/PracticeAreas"
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Navbar/>
       <main>
         <Hero/>
-        <hr className="border-background border-3" />
+        <PracticeAreas/>
         <Office/>
       </main>
     </div>

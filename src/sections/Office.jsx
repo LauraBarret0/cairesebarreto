@@ -29,7 +29,7 @@ const Office = () => {
 
           {/* Right Column */}
           <div className="lg:place-self-end">
-            <h3 className="relative text-text-muted text-center pb-10 italic lg:pb-5">
+            <h3 className="relative text-text-muted text-center pb-5 mb:pb-10 italic lg:pb-5">
               QUEM ESTÁ À FRENTE DO ESCRITÓRIO
               <span className="absolute w-5 h-2 bg-text-muted bottom-1 left-1/2 transform -translate-x-1/2 -skew-x-12"></span>
             </h3>
