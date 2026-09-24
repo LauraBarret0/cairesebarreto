@@ -54,7 +54,7 @@ const PracticeAreas = () => {
       </div>
 
       {/* Practice Areas */}
-      <div className="grid items-center gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+      <div className="grid items-center gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 mb-5">
         {areas.map((area, idx) => (
           <div
             key={idx}
