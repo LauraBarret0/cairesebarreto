@@ -1,8 +1,6 @@
-// import Header from './components/Header'
-// import HeroSection from './components/HeroSection'
-
 import Navbar from "./layout/Navbar"
 import Hero from "./sections/Hero"
+import Office from "./sections/Office"
 
 function App() {
   return (
@@ -10,12 +8,10 @@ function App() {
       <Navbar/>
       <main>
         <Hero/>
+        <hr className="border-background border-3" />
+        <Office/>
       </main>
     </div>
-    // <div className='bg-white min-h-screen'>
-    //   <Header/>
-    //   {/* <HeroSection/> */}
-    // </div>
   )
 }
 
