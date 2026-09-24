@@ -54,11 +54,11 @@ const PracticeAreas = () => {
       </div>
 
       {/* Practice Areas */}
-      <div className="grid items-center gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 mb-5">
+      <div className="grid items-center gap-10 px-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 mb-5">
         {areas.map((area, idx) => (
           <div
             key={idx}
-            className="shadow-lg place-self-center w-50 h-full py-8 px-4 bg-card-background overflow-hidden flex flex-col items-center rounded-tr-2xl rounded-bl-2xl  lg:w-60"
+            className="shadow-lg place-self-center w-50 h-full py-8 px-4 bg-card-background overflow-hidden flex flex-col items-center rounded-tr-2xl rounded-bl-2xl md:w-60  lg:gap-2 2xl:w-70 "
           >
             <img className="w-10 fill-red-600" src={area.icon} alt="" />
             <h3 className="text-2xl font-extrabold text-center">{area.title}</h3>

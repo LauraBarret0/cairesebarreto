@@ -7,7 +7,7 @@ const Office = () => {
       <div className="container mx-auto  px-6 relative z-10">
         <div className="h-full grid lg:grid-cols-2 gap-16 items-center">
           {/*Left Column  */}
-          <div className="space-y-20 place-self-start ">
+          <div className="space-y-20 place-self-center ">
             <h2 className="text-text-muted font-title italic font-extrabold text-3xl tracking-wide">
               O Escritório
             </h2>
