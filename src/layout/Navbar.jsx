@@ -11,7 +11,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <header className="fixed top-0 left-0 right-0 py-5 border-b-foreground border-b">
+        <header className="fixed top-0 left-0 right-0 py-5 bg-background border-b-foreground border-b z-50">
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="">
@@ -20,7 +20,7 @@ const Navbar = () => {
 
                 {/* Desktop navigation */}
                 <div>
-                    <ul className="hidden md:flex gap-16 items-center">
+                    <ul className="hidden lg:flex gap-16 items-center">
                         {navLinks.map((item, index) => (
                             <li key={index}>
                                 <a
@@ -44,7 +44,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-foreground"
+                    className="lg:hidden text-foreground"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
                 </button>
@@ -52,10 +52,10 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="fixed inset-0 bg-black/10 backdrop-blur-sm md:hidden" onClick={() => setIsMenuOpen(false)}></div>
+                <div className="fixed inset-0 bg-black/10 backdrop-blur-sm lg:hidden" onClick={() => setIsMenuOpen(false)}></div>
             )}
             <div
-                className={`fixed top-0 right-0 h-full w-80 bg-white Z-10 transition-transform duration-300 md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} p-8 flex flex-col`
+                className={`fixed top-0 right-0 h-full w-80 bg-white Z-10 transition-transform duration-300 lg:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} p-8 flex flex-col`
                 }>
                 <button className="self-end text-foreground mb-10"
                     onClick={() => setIsMenuOpen(false)}>
