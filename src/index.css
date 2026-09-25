@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=DM+Serif+Text:ital@0;1&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -14,7 +14,8 @@
 
   --color-button: #7A191A;
 
-  --font-title: "Cormorant Garamond", serif;
+  --font-title: "DM Serif Text", serif;
+  --font-secondary: "Abhaya Libre", serif;
 
 }
 
@@ -26,6 +27,6 @@
   body{
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font) ;
+    font-family: var(--font-secondary) ;
   }
 }

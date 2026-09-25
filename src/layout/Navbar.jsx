@@ -11,7 +11,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <header className="fixed top-0 left-0 right-0 py-5 bg-background border-b-foreground border-b z-50">
+        <header className="fixed top-0 left-0 right-0 py-3 bg-background border-b-foreground border-b z-50">
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="">
@@ -25,7 +25,7 @@ const Navbar = () => {
                             <li key={index}>
                                 <a
                                     href={item.href}
-                                    className="hover:text-muted font-semibold text-lg"
+                                    className="hover:text-muted font-bold text-xl"
                                 >
                                     {item.label}
                                 </a>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
                         {/* CTA */}
                         <a
-                            className="text-white bg-button hover:bg-button/90 px-6 py-2.5 text-center font-medium text-lg"
+                            className="text-white bg-button hover:bg-button/90 px-6 py-2.5 text-center font-bold text-xl"
                             href="#contato"
                         >
                             Fale Conosco
@@ -66,14 +66,14 @@ const Navbar = () => {
                         <li key={index}>
                             <a
                                 href={item.href}
-                                className="text-xl"
+                                className="font-bold text-xl"
                             >
                                 {item.label}
                             </a>
                         </li>
                     ))}
                     <a
-                        className="text-white bg-button hover:bg-button/90 px-6 py-2.5 text-center"
+                        className="text-white bg-button hover:bg-button/90 px-6 py-2.5 text-center font-bold text-xl"
                         href="#contato"
                     >
                         Fale Conosco
