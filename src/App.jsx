@@ -1,3 +1,4 @@
+import Footer from "./layout/Footer"
 import Navbar from "./layout/Navbar"
 import Contact from "./sections/Contact"
 import Hero from "./sections/Hero"
@@ -14,6 +15,7 @@ function App() {
         <Office/>
         <Contact/>
       </main>
+      <Footer/>
     </div>
   )
 }
