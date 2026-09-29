@@ -41,7 +41,7 @@ const PracticeAreas = () => {
   return (
     <section
       id="areasatuacao"
-      className="min-h-screen bg-background overflow-hidden font-title mb-9 mt-10  "
+      className="container mx-auto min-h-screen bg-background overflow-hidden font-title mb-9 mt-10 "
     >
       <div className="container mx-auto relative z-10">
         <div className="text-center mx-auto max-w-3xl mb-16">
