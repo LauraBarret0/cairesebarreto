@@ -15,7 +15,7 @@ const Navbar = () => {
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="">
-                    <img className="w-30" src="logo.png" alt="" />
+                    <img className="w-50 md:w-80" src="logo.png" alt="" />
                 </a>
 
                 {/* Desktop navigation */}
@@ -46,7 +46,7 @@ const Navbar = () => {
                 <button
                     className="lg:hidden text-foreground"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+                    {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
             </nav>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
                 }>
                 <button className="self-end text-foreground mb-10"
                     onClick={() => setIsMenuOpen(false)}>
-                    <X size={20} />
+                    <X size={28} />
                 </button>
                 <ul className="flex flex-col gap-16">
                     {navLinks.map((item, index) => (
