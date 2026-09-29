@@ -15,7 +15,7 @@ const Navbar = () => {
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="">
-                    <img className="w-20 md:w-40 lg:w-60" src="logo.png" alt="" />
+                    <img className="w-40 lg:w-60" src="logo.png" alt="" />
                 </a>
 
                 {/* Desktop navigation */}
