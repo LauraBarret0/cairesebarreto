@@ -1,11 +1,11 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex overflow-hidden border-b-foreground border-b-50 pt-10">
+    <section className="relative min-h-screen flex overflow-hidden border-b-foreground border-b-50 md:pt-10">
       {/* Content */}
       <div className="container mx-auto px-6 pt-10 relative z-10">
         <div className="h-full grid lg:grid-cols-3 gap-10">
           {/* Left Column - Text Content */}
-          <div className="pt-15 space-y-8 max-h-fit place-self-center lg:col-span-2">
+          <div className="md:pt-15 space-y-8 max-h-fit place-self-center lg:col-span-2">
             <h1 className="text-6xl italic md:text-7xl lg:text-8xl text-foreground font-title">
               <span className="text-muted">Advocacia </span>
               Para <br /> Pessoas e Empresas
