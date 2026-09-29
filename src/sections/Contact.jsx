@@ -24,7 +24,7 @@ const Contact = () => {
                 Vamos conversar sobre{" "}
                 <span className="text-muted"> seu caso ?</span>
               </h2>
-              <p className="text-foreground/90 text-base font-semibold">
+              <p className="text-foreground/90 text-base font-semibold pb-5 ">
                 Entre em contato para apresentar sua situação e verificar como
                 podemos ajudar.
               </p>

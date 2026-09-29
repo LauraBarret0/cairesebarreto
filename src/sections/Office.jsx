@@ -51,7 +51,7 @@ const Office = () => {
           </div>
 
           <div className="flex flex-col items-center gap-2">
-            <img src="/doutor.png" alt="" />
+            <img src="/doutora.png" alt="" />
 
             <p className="text-text text-center">
               Dra. Maristela Caires <br />
