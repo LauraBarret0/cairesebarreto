@@ -55,7 +55,7 @@ const Navbar = () => {
                 <div className="fixed inset-0 bg-black/10 backdrop-blur-sm lg:hidden" onClick={() => setIsMenuOpen(false)}></div>
             )}
             <div
-                className={`fixed top-0 right-0 h-full w-80 bg-white Z-10 transition-transform duration-300 lg:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} p-8 flex flex-col`
+                className={`fixed top-0 right-0 h-full w-80 bg-white z-100 transition-transform duration-300 lg:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} p-8 flex flex-col`
                 }>
                 <button className="self-end text-foreground mb-10"
                     onClick={() => setIsMenuOpen(false)}>
