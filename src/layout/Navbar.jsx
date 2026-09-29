@@ -11,11 +11,11 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <header className="md:fixed top-0 left-0 right-0 py-3 bg-background border-b-foreground border-b z-50">
+        <header className="fixed top-0 left-0 right-0 py-3 bg-background border-b-foreground border-b z-50">
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="">
-                    <img className="w-40 lg:w-60" src="logo.png" alt="" />
+                    <img className="w-30" src="logo.png" alt="" />
                 </a>
 
                 {/* Desktop navigation */}
@@ -46,7 +46,7 @@ const Navbar = () => {
                 <button
                     className="lg:hidden text-foreground"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                    {isMenuOpen ? <X size={20} /> : <Menu  size={20} />}
+                    {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
                 </button>
             </nav>
 
