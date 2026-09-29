@@ -11,7 +11,7 @@ const Hero = () => {
               Para <br /> Pessoas e Empresas
             </h1>
 
-            <p className="text-2xl font-medium text-foreground xl:text-3xl">
+            <p className="text-lg font-medium text-foreground xl:text-3xl">
               Atuação jurídica preventiva e contenciosa, com atendimento
               personalizado e acompanhamento próximo.
             </p>

@@ -1,3 +1,6 @@
+import { FaWhatsapp } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
+
 const areaOptions = [
   "Cível",
   "Empresarial",
@@ -16,28 +19,39 @@ const Contact = () => {
           {/* Left Column */}
           <div className="flex flex-col justify-around">
             <div className="flex flex-col gap-5">
-                <span className="text-muted">CONTATO</span>
-                <h2 className="text-5xl">
-                  Vamos conversar sobre{" "}
-                  <span className="text-muted"> seu caso ?</span>
-                </h2>
-                <p className="text-foreground/90">
-                  Entre em contato para apresentar sua situação e verificar como
-                  podemos ajudar.
-                </p>
+              <span className="text-muted font-secondary ">CONTATO</span>
+              <h2 className="text-5xl font-title ">
+                Vamos conversar sobre{" "}
+                <span className="text-muted"> seu caso ?</span>
+              </h2>
+              <p className="text-foreground/90 text-base font-semibold">
+                Entre em contato para apresentar sua situação e verificar como
+                podemos ajudar.
+              </p>
             </div>
             <div className="flex flex-col gap-5">
               <div className="">
-                <h3>TELEFONES: </h3>
-                <p>(11) 3207-4780 | (11) 3277-8243</p>
+                <h3 className="text-muted text-sm">TELEFONES: </h3>
+                <p className="text-foreground font-extrabold text-lg">
+                  (11) 3207-4780 | (11) 3277-8243
+                </p>
               </div>
               <div className="">
-                <h3>EMAIL: </h3>
-                <p>caires.silva@terra.com.br    </p>
+                <h3 className="text-muted text-sm">EMAIL: </h3>
+                <p className="text-foreground font-extrabold text-lg">
+                  caires.silva@terra.com.br{" "}
+                </p>
               </div>
               <div className="">
-                <h3>ENDEREÇO: </h3>
-                <p>Rua Bueno de Andrade, 834, Sobreloja 2 <br /> Aclimação, São Paulo - SP <br /> 01526-000 </p>
+                <h3 className="text-muted text-sm">ENDEREÇO: </h3>
+                <p className="text-foreground font-extrabold text-lg">
+                  Rua Bueno de Andrade, 834, Sobreloja 2 <br /> Aclimação, São
+                  Paulo - SP <br /> 01526-000{" "}
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <FaWhatsapp className=" text-background bg-foreground rounded-full  z-50 p-2.5 cursor-pointer" size={40} />
+                <MdOutlineEmail className=" text-background bg-foreground rounded-full  z-50 p-2.5 cursor-pointer" size={40}  />
               </div>
             </div>
           </div>
@@ -50,10 +64,12 @@ const Contact = () => {
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  Nome:{" "}
+                  Nome:
                 </label>
+
                 <input
                   id="name"
+                  name="name"
                   type="text"
                   required
                   placeholder="Seu nome..."
@@ -66,36 +82,45 @@ const Contact = () => {
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  Email:{" "}
+                  Email:
                 </label>
+
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   required
-                  placeholder="seu@email.com"
+                  placeholder="seunome@email.com"
                   className="w-full px-4 py-3 border border-foreground focus:ring-1"
                 />
               </div>
 
               <div>
                 <label htmlFor="tel" className="block text-sm font-medium mb-2">
-                  Telefone:{" "}
+                  Telefone:
                 </label>
-                <input className="w-full px-4 py-3 border border-foreground focus:ring-1" />
+
+                <input
+                  id="tel"
+                  name="tel"
+                  type="tel"
+                  placeholder="(11) 9 1234-5678"
+                  className="w-full px-4 py-3 border border-foreground focus:ring-1"
+                />
               </div>
 
               <div>
                 <label
-                  htmlFor="service"
+                  htmlFor="area"
                   className="block text-sm font-medium mb-2"
                 >
-                  Área desejada:{" "}
+                  Área desejada:
                 </label>
+
                 <select
                   name="area"
                   id="area"
                   className="w-full px-4 py-3 border border-foreground focus:ring-1"
-                  //   className="w-50full border border-gray-300 bg-white px-4 py-3 text-[#0D1821] outline-none focus:border-[#6B1E2E]"
                 >
                   <option value="">Selecione uma área</option>
 
@@ -112,13 +137,15 @@ const Contact = () => {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  Message:{" "}
+                  Mensagem:
                 </label>
+
                 <textarea
                   rows={3}
-                  id="messagem"
+                  id="message"
+                  name="message"
                   required
-                  placeholder="Digíte sua mensagem"
+                  placeholder="Digite sua mensagem"
                   className="w-full px-4 py-3 border border-foreground focus:ring-1 resize-none"
                 />
               </div>
@@ -131,7 +158,9 @@ const Contact = () => {
               </button>
             </form>
           </div>
+         
         </div>
+
       </div>
     </section>
   );

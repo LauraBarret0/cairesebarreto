@@ -13,7 +13,7 @@ const Office = () => {
           O Escritório
         </h2>
 
-        <div className="space-y-4 text-text text-2xl font-secondary text-background">
+        <div className="space-y-4 text-2xl font-secondary text-background">
           <p>
             A Caires & Barreto Associados atua na prestação de serviços de
             consultoria e assistência jurídica, nas esferas preventiva e

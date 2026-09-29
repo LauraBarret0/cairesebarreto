@@ -5,9 +5,10 @@ import Hero from "./sections/Hero"
 import Office from "./sections/Office"
 import PracticeAreas from "./sections/PracticeAreas"
 
+
 function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden ">
+    <div className="min-h-screen overflow-x-hidden  ">
       <Navbar/>
       <main>
         <Hero/>
