@@ -11,7 +11,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <header className="fixed top-0 left-0 right-0 py-3 bg-background border-b-foreground border-b z-50">
+        <header className="lg:fixed top-0 left-0 right-0 py-3 bg-background border-b-foreground border-b z-50">
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <a href="">
