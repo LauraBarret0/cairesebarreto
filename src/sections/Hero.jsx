@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Image */}
-          <div className="lg:col-span-1 place-self-end relative w-60 md:w-80 aspect-4/5 mx-auto">
+          <div className="lg:col-span-1 place-self-end relative w-60 md:w-80 lg:w-100 aspect-4/5 mx-auto">
             <img className="w-full" src="/justicegirl.png" alt="" />
           </div>
         </div>

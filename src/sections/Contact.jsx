@@ -104,6 +104,7 @@ const Contact = () => {
                   id="tel"
                   name="tel"
                   type="tel"
+                  required
                   placeholder="(11) 9 1234-5678"
                   className="w-full px-4 py-3 border border-foreground focus:ring-1"
                 />
@@ -120,6 +121,7 @@ const Contact = () => {
                 <select
                   name="area"
                   id="area"
+                  required
                   className="w-full px-4 py-3 border border-foreground focus:ring-1"
                 >
                   <option value="">Selecione uma área</option>
