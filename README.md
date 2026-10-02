@@ -1,16 +1,66 @@
-# React + Vite
+# Caires & Barreto — Advogados Associados
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page institucional desenvolvida para o escritório **Caires & Barreto Advogados Associados**, com o objetivo de apresentar o escritório, suas áreas de atuação, seus sócios e facilitar o contato com potenciais clientes.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido com foco em uma experiência moderna, profissional, responsiva e acessível, mantendo uma identidade visual compatível com o segmento jurídico.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto consiste em uma landing page institucional para um escritório de advocacia localizado em São Paulo.
 
-## Expanding the ESLint configuration
+A proposta foi desenvolver uma presença digital mais moderna e organizada, facilitando o acesso às principais informações do escritório e aos canais de contato.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A página apresenta:
+
+- Apresentação do escritório
+- Áreas de atuação
+- Informações sobre os sócios
+- Formulário de contato
+- Navegação responsiva
+- Identidade visual personalizada
+- Favicon
+- Acessibilidade
+- SEO básico
+- Layout adaptável para diferentes dispositivos
+
+---
+
+## Objetivos
+
+O projeto foi desenvolvido com os seguintes objetivos:
+
+- Apresentar o escritório de forma profissional;
+- Facilitar a localização das informações pelos visitantes;
+- Destacar as principais áreas de atuação;
+- Apresentar os responsáveis pelo escritório;
+- Facilitar o contato com potenciais clientes;
+- Criar uma experiência consistente em dispositivos móveis e desktops;
+- Aplicar boas práticas de desenvolvimento frontend;
+- Implementar fundamentos de acessibilidade e SEO.
+
+---
+
+## Tecnologias utilizadas
+
+### Frontend
+
+- **React** — construção da interface e componentização;
+- **JavaScript** — lógica e interatividade;
+- **Tailwind CSS** — estilização e desenvolvimento responsivo;
+- **HTML5** — estrutura semântica da aplicação;
+- **CSS3** — complementação dos estilos quando necessário.
+
+### Bibliotecas
+
+- **Lucide React** — utilização de ícones.
+
+### Ferramentas
+
+- **Vite** — ambiente de desenvolvimento e build;
+- **Git** — controle de versão;
+- **GitHub** — hospedagem do código e versionamento.
+
+---
+
