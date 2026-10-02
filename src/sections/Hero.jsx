@@ -1,34 +1,45 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex overflow-hidden border-b-foreground border-b-50 md:pt-10">
+    <section
+      className="relative min-h-screen flex overflow-hidden border-b-foreground border-b-50 md:pt-10"
+      aria-labelledby="hero-title"
+    >
       {/* Content */}
       <div className="container mx-auto px-6 pt-10 relative z-10">
         <div className="h-full grid lg:grid-cols-3 gap-10">
           {/* Left Column - Text Content */}
           <div className="md:pt-15 space-y-8 max-h-fit place-self-center lg:col-span-2">
-            <h1 className="text-6xl italic md:text-7xl 2xl:text-8xl text-foreground font-title">
+            <h1
+              id="hero-title"
+              className="text-6xl italic md:text-7xl 2xl:text-8xl text-foreground font-title"
+            >
               <span className="text-muted">Advocacia </span>
               Para <br /> Pessoas e Empresas
             </h1>
 
-            <p className="text-lg  font-medium text-foreground md:text-xl 2xl:text-2xl">
+            <p className="text-lg font-medium text-foreground md:text-xl 2xl:text-2xl">
               Atuação jurídica preventiva e contenciosa, com atendimento
               personalizado e acompanhamento próximo.
             </p>
 
             <div className="pt-10">
               <a
-                className="text-lg text-white bg-button hover:bg-button/90 px-9 py-4.5 text-center"
                 href="#contato"
+                className="inline-block text-lg text-white bg-button hover:bg-button/90 px-9 py-4.5 text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
               >
                 Agende uma conversa
               </a>
             </div>
           </div>
 
-          {/* Right Column - Image */}
+          {/* Right Column - Decorative Image */}
           <div className="lg:col-span-1 place-self-end relative w-60 md:w-80 lg:w-100 aspect-4/5 mx-auto">
-            <img className="w-full" src="/justicegirl.png" alt="" />
+            <img
+              className="w-full"
+              src="/justicegirl.png"
+              alt="Escultura da Deusa da Justiça (Têmis) de olhos vendados, segurando uma balança e uma espada."
+              aria-hidden="true"
+            />
           </div>
         </div>
       </div>
@@ -37,3 +48,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
